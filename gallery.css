@@ -1,0 +1,250 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+body{
+	background: linear-gradient(90deg,#ffec6c,lightgreen);
+}
+
+.navbar{
+	background: white;
+	display: flex;
+	position: sticky;
+	position: -webkit-sticky;
+	top:0;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	z-index: 9;
+}
+
+.navbar-dark{
+	text-align: center;
+}
+
+.navbar-links{
+	margin-bottom: 10px;
+}
+
+.navbar li{
+	list-style: none;
+	float: left;
+	padding: 2vw;
+	font-family: 'Open Sans';
+}
+
+.navbar li a{
+	text-decoration: none;
+	color: black;
+}
+
+.navbar li a:hover{
+	color: orangered;
+}
+
+.navbar li a:active{
+	color: darkorange;
+}
+
+.months{
+	display: block;
+	text-align: justify;
+	font-family: 'Roboto';
+	margin-top: 20px;
+	padding: 10px 20px;
+}
+
+.months h3{
+	font-size: 25px;
+	padding: 0 20px;
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+.image-jan{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.img-jan{
+		width: 90%;
+		margin-bottom: 20px;
+}
+
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 50px 0;
+}
+
+.gallery-pics{
+		width: 90%;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+.column {
+  float: left;
+  width: 16.66%;
+}
+
+.demo {
+  filter: grayscale(50%);
+}
+
+.active,
+.demo:hover {
+  filter: grayscale(0%);
+}
+
+
+
+.footers{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	border-top: 5px solid gray;
+	width: 100%;
+	background: lightgrey;
+	font-family: 'Open Sans';
+	margin-top: 40px;
+	
+}	
+
+.footers ul li{
+	list-style: none;
+	float: left;
+}
+
+.footers li a{
+	color: black;
+	text-decoration: none;
+}
+
+.alone{
+	list-style: none;
+	float: right;
+}
+
+
+h6 i{
+	display: inline;
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+h6 i:hover{
+	color: darkblue;
+}
+
+.logos{
+	display: inline-flex;
+	padding: 10px;
+}
+
+.logos h6 a{
+	color: black;
+}
+
+
+@media screen and (min-width: 768px ){
+	.navbar-dark{
+		display: flex;
+		align-items: center;
+	}
+
+	.image-jan{
+		max-width: 100%;
+		flex-direction: row;
+	}
+
+	.months h3{
+		font-size: 40px;
+	}
+
+	.months p{
+		width: 50%;
+		text-align: center;
+		margin: 0 auto;
+	}
+
+	.img-jan{
+		width: 20%;
+	}
+
+	.gallery-pics{
+		width: 50%;
+	}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

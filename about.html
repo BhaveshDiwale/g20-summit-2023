@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="about.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Roboto&family=Rubik&family=Work+Sans:wght@100;400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>About Us</title>
+</head>
+<body>
+	<div class="navbar">
+		<nav class="navbar-dark">
+			<a><img src="g20images/logo.jpg" width="100" height="80"></a>	
+			<ul class="navabar-links">
+				<li id="link1"><a href="index.html">Home</a></li>
+				<li id="link2"><a href="gallery.html">Gallery</a></li>
+				<li id="link3"><a href="#">About Us</a></li>
+				<li id="link4"><a href="contact_us.html">Contact Us</a></li>
+			</ul> 
+ 		</nav>
+	</div>
+
+	<div class="g20-intro">
+		<h2>About G20</h2>
+		<p>The Group of Twenty (G20) is the premier forum for international economic cooperation.<br/>
+
+		The members of the G20 are: <strong>Argentina, Australia, Brazil, Canada, China, France, Germany, India, Indonesia, Italy, Japan, Republic of Korea, Mexico, Russia, Saudi Arabia, South Africa, Türkiye, the United Kingdom, the United States, and the European Union</strong>. Each year, the presidency invites guest countries to participate. Spain is invited as a permanent guest.</p>
+
+		<img src="g20images/banner.jpg" class="intro-img">
+
+		<p>The G20 brings together the world's major and systemically important economies. Its members account for around 85 per cent of global GDP, 75 per cent of global trade and 65 percent of the world’s population.
+
+		The forum has met every year since 1999, with leaders meeting for an annual G20 Leaders' Summit since 2008.
+
+		In addition to the Summit, ministerial meetings, sherpa meetings, working groups and special events are organised throughout the year.</p>
+	</div>
+
+	<div class="faq">
+		<h1>Got a query? Find it here</h1>
+
+		<div class="q1"><h4>What is the theme of G20 summit 2023?</h4>
+		<button type="button" onclick="ans1()">Show</button>
+		<div id="ans1"><p>The theme of India's G20 Presidency - “Vasudhaiva Kutumbakam” or “One Earth. One Family. One Future” - is drawn from the ancient Sanskrit text of the Maha Upanishad.</p></div>
+		</div>
+
+		<div class="q2"><h4>Why is the G20 important?</h4>
+		<button type="button" onclick="ans2()">Show</button>
+		<div id ="ans2"><p>The Group of Twenty (G20) is the premier forum for international economic cooperation. It plays an important role in shaping and strengthening global architecture and governance on all major international economic issues.</p></div>
+		</div>
+
+		<div class="q3"><h4>Who started G20?</h4>
+		<button type="button" onclick="ans3()">Show</button>
+		<div id ="ans3"><p>The Group of Twenty (G20) was formed in 1999 and was originally a meeting of the Minister of Finance and the Governor of the Central Bank in an effort to broaden the discussion of policies that are beneficial for resolving the global economic and financial crisis.</p></div>
+		</div>
+
+		<div class="q4"><h4>How does G20 affect the global economy?</h4>
+		<button type="button" onclick="ans4()">Show</button>
+		<div id ="ans3"><p>The objectives of the G20 are: a) Policy coordination between its members in order to achieve global economic stability, sustainable growth; b) To promote financial regulations that reduce risks and prevent future financial crises; and c) To create a new international financial architecture.</p></div>
+		</div>
+
+
+		<div class="resource-link">
+			
+			<h2>Get a detailed description of G20</h2>
+			<a href="https://en.wikipedia.org/wiki/G20">Wikipedia</a>
+			<a href="https://www.dfat.gov.au/trade/organisations/g20">Department of foreign affairs and Trades</a>
+			<a href="https://www.india.gov.in/spotlight/group-twenty-g20">National Portal of India</a>
+		</div>
+
+		<div class="newsletter">
+		<h2>Subscribe to our newsletter for regular updates</h2>
+
+		<form id="letter">
+					<input type="text" name="fname" placeholder="Full Name"><br>
+					<input type="email" name="email" placeholder="Email"><br>
+					<input type="checkbox" name="permission" placeholder="By accepting, you agree to our T&C and Privacy Policy">
+					<label for="accept">By accepting, you agree to our T&C and Privacy Policy</label><br>
+					<input type="submit" name="submit" value="Subscribe" onclick="alerts()">
+			
+		</form>
+	</div>
+</div>
+
+	<div class="footers">
+ 		<ul>
+ 			<li><a href="#"><h6>Privacy Policy |</h6></a></li>
+ 			<li><a href="#"><h6>Terms & Conditions</h6></a></li>	
+		</ul>
+
+		<li class="alone"><a href="#"><h6>&#169 2023. All Rights Reserved</h6></a></li>
+
+		<div class="logos">
+		<h6><a href="https://instagram.com/all_yours_bhavesh?igshid=NmQ2ZmYxZjA="><i class="fa fa-instagram" style="font-size:30px"></i></a></h6>
+		<h6><a href="https://www.facebook.com/bhavesh.diwale"><i class="fa fa-facebook" style="font-size:30px"></i></a></h6>
+		<h6><a href="https://www.linkedin.com/in/bhavesh-diwale-0a7a63228"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a></h6>
+		</div>
+
+		<h6>&#169 Content owned by Bhavesh Diwale</h6>
+	</div>
+
+	<script type="text/javascript">
+
+		function ans1(){
+			document.getElementById('ans1').style.display= "flex";
+		}
+
+		function ans2(){
+			document.getElementById('ans2').style.display= "flex";
+		}
+
+		function ans3(){
+			document.getElementById('ans3').style.display= "flex";
+		}
+
+		function ans4(){
+			document.getElementById('ans4').style.display= "flex";
+
+		}
+
+		function alerts(){
+			alert("Thank you for subscribing to our newsletter.");
+		}
+	</script>
+</body>
+</html>
